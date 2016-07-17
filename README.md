@@ -1,0 +1,2 @@
+# InternsScheduler
+Interns scheduler application
