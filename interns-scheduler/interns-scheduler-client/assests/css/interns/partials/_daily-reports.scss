@@ -1,0 +1,28 @@
+.calendar-wrapper {
+  display: inline-block;
+}
+
+.daily-report-wrapper {
+  .report-controls {
+    display: flex;
+    justify-content: space-between;
+    .add-remove-task-buttons {
+
+    }
+    .save-cancel-buttons {
+
+    }
+  }
+}
+
+.remove-task-btn:hover {
+  cursor: pointer;
+}
+
+.table>tbody>tr>td.daily-task-buttons-cell {
+  vertical-align: middle;
+}
+
+.has-validation-error {
+  border: 1px solid red;
+}

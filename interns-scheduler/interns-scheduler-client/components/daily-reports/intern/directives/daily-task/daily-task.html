@@ -1,0 +1,25 @@
+<tr>
+    <td show-errors inputName="taskDescription{{task._id}}">
+        <input
+                ng-readonly="task._id"
+                ng-required=true
+                ng-model="task.description"
+                name="taskDescription"
+                class="form-control task-description"
+                type="text"/>
+    </td>
+    <td show-errors inputName="taskHours{{task._id}}">
+        <input
+                ng-readonly="task._id"
+                ng-required=true
+                ng-model="task.hours"
+                name="taskHours"
+                class="form-control task-hours"
+                type="number">
+    </td>
+    <td class="daily-task-buttons-cell">
+        <button ng-show="task._id" class="btn btn-sm btn-primary edit-btn">Edit</button>
+        <button ng-show="task._id" class="btn btn-sm btn-danger delete-btn" ng-click="deleteTask(task._id)">Delete
+        </button>
+    </td>
+</tr>

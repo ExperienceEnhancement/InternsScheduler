@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app="internsScheduler">
+<head>
+    <meta charset="utf-8">
+    <title>Interns Scheduler</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/css/interns/interns.css"/>
+</head>
+<body>
+<div class="container-fluid">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="/index.html">Daily Reports</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Documents</a></li>
+    </ul>
+</div>
+<main>
+    <div ng-view></div>
+</main>
+
+<script src="/node_modules/angular/angular.min.js"></script>
+<script src="assests/lib/angular/angular-route.js"></script>
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script src="/node_modules/moment/moment.js"></script>
+
+<!-- components.js -->
+<script src="app.js"></script>
+
+<!-- controllers -->
+<script src="components/daily-reports/intern/daily-reports-controller.js"></script>
+
+<!-- services -->
+<script src="components/daily-reports/intern/services/calendar.js"></script>
+<script src="components/daily-reports/intern/services/daily-reports.js"></script>
+<script src="shared/services/requester.js"></script>
+<script src="shared/services/users-data.js"></script>
+
+<!-- Directives -->
+<script src="components/daily-reports/intern/directives/daily-task/daily-task.js"></script>
+<script src="components/daily-reports/intern/directives/show-errors.js"></script>
+</body>
+</html>
