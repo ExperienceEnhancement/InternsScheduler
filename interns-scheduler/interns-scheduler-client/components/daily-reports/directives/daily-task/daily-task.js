@@ -9,6 +9,6 @@ app.directive('dailyTask', [function () {
                 $(this).hide();
             });
         },
-        templateUrl: '/components/daily-reports/intern/directives/daily-task/daily-task.html'
+        templateUrl: '/components/daily-reports/directives/daily-task/daily-task.html'
     }
 }]);

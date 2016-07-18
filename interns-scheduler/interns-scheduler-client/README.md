@@ -110,7 +110,7 @@ fetch the changes and merge them into your project with git.
         daily-reports-controller.js  --> application controllers
         directives.js   --> application directives
         filters.js      --> custom angular filters
-        calendar.js     --> custom angular services
+        calendar-service.js     --> custom angular services
       lib/              --> angular and 3rd party javascript libraries
         angular/
           angular.js        --> the latest angular js

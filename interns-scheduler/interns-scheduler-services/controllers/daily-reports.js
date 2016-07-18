@@ -2,6 +2,9 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 
+// Common
+var constants = require('../shared/constants.js');
+
 // Models
 var DailyTask = require('../models/daily-task');
 var User = require('../models/user');
@@ -9,7 +12,8 @@ var User = require('../models/user');
 router.get('/:internId/:date', function (req, res, next) {
     var internId = req.params.internId;
     var dateString = req.params.date;
-    var dateFilter = new Date(dateString + 'T00:00:00.000Z');
+    // Create UTC date filter
+    var dateFilter = new Date(dateString + constants.UTC_TIME_STRING);
 
     DailyTask.find({
         intern_id: internId,
