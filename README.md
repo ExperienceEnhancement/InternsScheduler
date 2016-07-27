@@ -1,2 +1,2 @@
 # InternsScheduler
-Distributed application with AngularJS(Client) and Express(Server). 
+Distributed application with AngularJS(Client) and Express(Server) 
